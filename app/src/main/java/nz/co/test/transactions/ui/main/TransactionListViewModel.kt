@@ -26,7 +26,7 @@ class TransactionListViewModel @Inject constructor(
     fun getTransactionList() {
         viewModelScope.launch(coroutineDispatcher) {
             when (val result = getTransactions()) {
-                is ResponseResult.Success -> transactionsListMutableLiveData.postValue(result.data)
+                is ResponseResult.Success -> transactionsListMutableLiveData.postValue(result.data.sortedBy { it.transactionDate })
                 is ResponseResult.Error -> errorMutableLiveData.postValue(result.exception.message)
             }
         }
