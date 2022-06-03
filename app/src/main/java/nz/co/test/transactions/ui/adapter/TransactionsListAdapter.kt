@@ -63,6 +63,7 @@ class TransactionsListAdapter(
             binding.apply {
                 id.text = transaction.id.toString()
                 transactionDate.text = transaction.transactionDate.toString()
+                summary.text=transaction.summary
             }
         }
     }

@@ -11,8 +11,8 @@
 
         <TextView
             android:id="@+id/id"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,18 @@
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/id"
-            app:layout_constraintTop_toTopOf="@+id/id" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/summary"/>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/id"
+            app:layout_constraintTop_toBottomOf="@+id/transactionDate" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
