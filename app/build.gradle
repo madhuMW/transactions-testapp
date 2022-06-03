@@ -69,4 +69,9 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$rootProject.hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$rootProject.hilt_version"
 
+    //converter-gson
+    def convertergson_version = '2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:$convertergson_version"
+
+
 }
