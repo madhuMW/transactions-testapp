@@ -11,12 +11,14 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import nz.co.test.transactions.R
 import nz.co.test.transactions.data.services.Transaction
 import nz.co.test.transactions.databinding.FragmentTransactionListBinding
 import nz.co.test.transactions.ui.adapter.TransactionsListAdapter
 
+@AndroidEntryPoint
 class TransactionListFragment : Fragment(R.layout.fragment_transaction_list),
     TransactionsListAdapter.TransactionsListAdapterListener {
     private var _binding: FragmentTransactionListBinding? = null

@@ -1,8 +1,9 @@
 package nz.co.test.transactions.interactors
 
 import nz.co.test.transactions.framework.TransactionRepository
+import javax.inject.Inject
 
-class GetTransactions(private val transactionRepository: TransactionRepository) {
+class GetTransactions @Inject constructor (private val transactionRepository: TransactionRepository) {
     suspend operator fun invoke() =
         transactionRepository.getTransactionsList()
 }

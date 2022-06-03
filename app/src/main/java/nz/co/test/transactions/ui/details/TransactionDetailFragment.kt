@@ -6,10 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import dagger.hilt.android.AndroidEntryPoint
 import nz.co.test.transactions.R
 import nz.co.test.transactions.data.services.Transaction
 import nz.co.test.transactions.databinding.FragmentTransactionDetailBinding
 
+@AndroidEntryPoint
 class TransactionDetailFragment : Fragment(R.layout.fragment_transaction_detail) {
     private lateinit var transaction: Transaction
     private var _binding: FragmentTransactionDetailBinding? = null

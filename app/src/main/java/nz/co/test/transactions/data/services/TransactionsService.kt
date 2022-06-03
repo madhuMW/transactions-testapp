@@ -1,6 +1,7 @@
 package nz.co.test.transactions.data.services
 
 import nz.co.test.transactions.data.services.response.TransactionDTO
+import retrofit2.Response
 import retrofit2.http.GET
 
 interface TransactionsService {
@@ -11,6 +12,6 @@ interface TransactionsService {
     }
 
     @GET("test-data.json")
-    suspend fun retrieveTransactions(): List<TransactionDTO>
+    suspend fun retrieveTransactions(): Response<List<TransactionDTO>>
 }
 
