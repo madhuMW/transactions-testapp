@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import dagger.hilt.android.AndroidEntryPoint
 import nz.co.test.transactions.R
-import nz.co.test.transactions.data.services.Transaction
+import nz.co.test.transactions.data.model.Transaction
 import nz.co.test.transactions.databinding.FragmentTransactionDetailBinding
 
 @AndroidEntryPoint

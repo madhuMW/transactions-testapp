@@ -1,6 +1,6 @@
 package nz.co.test.transactions.data.repository
 
-import nz.co.test.transactions.data.services.Transaction
+import nz.co.test.transactions.data.model.Transaction
 import nz.co.test.transactions.utils.ResponseResult
 
 interface ITransactionRepository {

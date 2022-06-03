@@ -1,7 +1,7 @@
 package nz.co.test.transactions.framework
 
 import nz.co.test.transactions.data.mapper.IMapper
-import nz.co.test.transactions.data.services.Transaction
+import nz.co.test.transactions.data.model.Transaction
 import nz.co.test.transactions.data.services.response.TransactionDTO
 import java.time.LocalDateTime
 import java.time.OffsetDateTime

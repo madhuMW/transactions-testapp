@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.launch
-import nz.co.test.transactions.data.services.Transaction
+import nz.co.test.transactions.data.model.Transaction
 import nz.co.test.transactions.interactors.GetTransactions
 import nz.co.test.transactions.utils.ResponseResult
 import javax.inject.Inject

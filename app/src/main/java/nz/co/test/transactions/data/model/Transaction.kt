@@ -1,4 +1,4 @@
-package nz.co.test.transactions.data.services
+package nz.co.test.transactions.data.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

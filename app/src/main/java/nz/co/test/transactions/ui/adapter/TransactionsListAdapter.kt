@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import nz.co.test.transactions.data.services.Transaction
+import nz.co.test.transactions.data.model.Transaction
 import nz.co.test.transactions.databinding.ItemTransactionBinding
 
 class TransactionsListAdapter(

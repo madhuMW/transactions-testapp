@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import nz.co.test.transactions.R
-import nz.co.test.transactions.data.services.Transaction
+import nz.co.test.transactions.data.model.Transaction
 import nz.co.test.transactions.databinding.FragmentTransactionListBinding
 import nz.co.test.transactions.ui.adapter.TransactionsListAdapter
 

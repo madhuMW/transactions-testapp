@@ -9,7 +9,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.android.scopes.ActivityRetainedScoped
 import nz.co.test.transactions.data.mapper.IMapper
 import nz.co.test.transactions.data.repository.ITransactionRepository
-import nz.co.test.transactions.data.services.Transaction
+import nz.co.test.transactions.data.model.Transaction
 import nz.co.test.transactions.data.services.TransactionsService
 import nz.co.test.transactions.data.services.response.TransactionDTO
 import nz.co.test.transactions.framework.Mapper

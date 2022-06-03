@@ -12,7 +12,7 @@
             app:destination="@id/transactionDetailFragment" />
         <argument
             android:name="transaction"
-            app:argType="nz.co.test.transactions.data.services.Transaction" />
+            app:argType="nz.co.test.transactions.data.model.Transaction" />
     </fragment>
 
     <fragment
@@ -21,7 +21,7 @@
         android:label="@string/transaction_detail">
         <argument
             android:name="transaction"
-            app:argType="nz.co.test.transactions.data.services.Transaction" />
+            app:argType="nz.co.test.transactions.data.model.Transaction" />
     </fragment>
 
 </navigation>
