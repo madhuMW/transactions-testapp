@@ -51,7 +51,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
-    def fragment_version = '1.3.6'
+    def fragment_version = '1.4.1'
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
 
     def retrofit_version = '2.9.0'
@@ -72,6 +72,11 @@ dependencies {
     //converter-gson
     def convertergson_version = '2.9.0'
     implementation "com.squareup.retrofit2:converter-gson:$convertergson_version"
+
+    //navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigation_version"
+
 
 
 }
