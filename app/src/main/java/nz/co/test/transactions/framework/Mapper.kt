@@ -4,8 +4,9 @@ import nz.co.test.transactions.data.mapper.IMapper
 import nz.co.test.transactions.data.services.Transaction
 import nz.co.test.transactions.data.services.response.TransactionDTO
 import java.time.OffsetDateTime
+import javax.inject.Inject
 
-class Mapper : IMapper<List<TransactionDTO>, List<Transaction>> {
+class Mapper @Inject constructor(): IMapper<List<TransactionDTO>, List<Transaction>> {
 
     override fun createTransactionList(modelDTO: List<TransactionDTO>): List<Transaction> {
         var mappedResult: List<Transaction> = emptyList()
