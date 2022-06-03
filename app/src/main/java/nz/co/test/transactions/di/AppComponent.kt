@@ -1,5 +1,5 @@
 package nz.co.test.transactions.di
-
+/*
 import dagger.Component
 import nz.co.test.transactions.di.activities.ActivitiesModule
 import nz.co.test.transactions.di.network.NetworkModule
@@ -14,4 +14,4 @@ import javax.inject.Singleton
 )
 interface AppComponent {
     fun inject(appComponent: DaggerAppComponentFactory)
-}
+}*/

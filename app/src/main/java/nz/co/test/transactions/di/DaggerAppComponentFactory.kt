@@ -1,5 +1,5 @@
 package nz.co.test.transactions.di
-
+/*
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -18,4 +18,4 @@ class DaggerAppComponentFactory : AppComponentFactory() {
 
     @Inject
     lateinit var map: Map<Class<out Activity>, @JvmSuppressWildcards Provider<Activity>>
-}
+}*/

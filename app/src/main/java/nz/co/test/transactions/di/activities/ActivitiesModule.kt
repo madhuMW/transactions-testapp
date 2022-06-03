@@ -1,16 +1,16 @@
 package nz.co.test.transactions.di.activities
 
+import nz.co.test.transactions.ui.activities.MainActivity
 import android.app.Activity
 import dagger.Module
 import dagger.Provides
 import dagger.multibindings.IntoMap
-import nz.co.test.transactions.activities.MainActivity
 
 @Module
 class ActivitiesModule {
 
-    @Provides
+ /*   @Provides
     @IntoMap
     @ActivityClassKey(MainActivity::class)
-    fun providesMainActivity(): Activity = MainActivity()
+    fun providesMainActivity(): Activity = MainActivity()*/
 }
