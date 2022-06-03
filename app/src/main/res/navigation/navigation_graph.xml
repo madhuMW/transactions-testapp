@@ -2,5 +2,26 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation_graph"
-    >
+    app:startDestination="@id/transactionListFragment">
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="nz.co.test.transactions.ui.main.TransactionListFragment"
+        android:label="@string/transactions">
+        <action
+            android:id="@+id/action_trans_detail"
+            app:destination="@id/transactionDetailFragment" />
+        <argument
+            android:name="transaction"
+            app:argType="nz.co.test.transactions.data.services.Transaction" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="nz.co.test.transactions.ui.details.TransactionDetailFragment"
+        android:label="@string/transaction_detail">
+        <argument
+            android:name="transaction"
+            app:argType="nz.co.test.transactions.data.services.Transaction" />
+    </fragment>
+
 </navigation>

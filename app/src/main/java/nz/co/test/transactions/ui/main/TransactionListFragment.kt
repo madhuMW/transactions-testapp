@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import nz.co.test.transactions.R
+import nz.co.test.transactions.data.services.Transaction
 import nz.co.test.transactions.databinding.FragmentTransactionListBinding
 import nz.co.test.transactions.ui.adapter.TransactionsListAdapter
 
@@ -38,5 +40,10 @@ class TransactionListFragment : Fragment(R.layout.fragment_transaction_list),
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
+    }
+
+    override fun onItemTap(transaction: Transaction) {
+        val action = TransactionListFragmentDirections.actionTransDetail(transaction)
+        findNavController().navigate(action)
     }
 }
